@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Open+Sans&family=Poppins:wght@200;400&family=Secular+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.7%;
+  background-color: var(--background-dark);
+}
+
+.btn {
+  width: 120px;
+  height: 45px;
+  background-color: rgb(97, 74, 190);
+  color: black;
+  border: 1px solid rgb(97, 74, 190);
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: #8162fd;
+}
+
+:root {
+  --textSize-1: 8rem;
+  --textSize-2: 4.5rem;
+  --textSize-3: 3rem;
+  --textSize-4: 1.8rem;
+  --textSize-5: 1.4rem;
+  --font-Barlow: "Barlow", sans-serif;
+  --font-OpenSans: "Open Sans", sans-serif;
+  --font-Poppins: "Poppins", sans-serif;
+  --font-Secular: "Secular One", sans-serif;
+
+  --font-primaryColor: rgb(126, 126, 126);
+
+  --background-dark: #141416;
+}
+
+/* ****** Header Section ******** */
+
+.header {
+  display: flex;
+  height: 80px;
+  background-color: var(--background-dark);
+  color: white;
+
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-Barlow);
+}
+
+.header > a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo > img {
+  width: 4rem;
+  filter: brightness(1.5);
+}
+
+.logo > .logo-text {
+  font-size: 2.4rem;
+  padding-left: 5px;
+  color: white;
+  font-family: var(--font-Barlow);
+  font-weight: 500;
+  font-style: normal;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.menu > li {
+  padding: 0 15px 0 15px;
+}
+
+.menu li > a {
+  color: #6741ff;
+  font-size: 2rem;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.menu li > a:hover {
+  color: #c0b0fe;
+}
+
+/* ****** End of Header ******** */
+
+/* ****** Main Section ******** */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-OpenSans);
+  color: var(--font-primaryColor);
+}
+
+/* Hero Section */
+.hero {
+  width: 100%;
+  height: calc(100vh + 100px);
+  background-image: url("../img/background1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  padding: 5% 5%;
+  color: white;
+  font-family: var(--font-Poppins);
+  font-style: normal;
+}
+
+.hero-text h1 {
+  font-size: var(--textSize-1);
+  font-weight: 400;
+  line-height: 96px;
+}
+.hero-text h2 {
+  font-size: var(--textSize-2);
+  font-weight: 400;
+  line-height: 96px;
+}
+.hero-text h3 {
+  font-family: var(--font-OpenSans);
+  font-size: var(--textSize-3);
+  font-weight: 400;
+}
+
+.hero-btn {
+  margin-left: 5%;
+}
+
+/* End of Hero Section  */
+
+/* Features Intro Section  */
+.features-intro {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid var(--font-primaryColor);
+  position: relative;
+  top: -100px;
+}
+
+.features-intro-left {
+  height: 800px;
+  color: white;
+  background-image: url("../img/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5%;
+  flex: 0.3;
+}
+
+.features-intro-text > h2 {
+  font-size: var(--textSize-3);
+  font-weight: 400;
+}
+
+.features-intro-text > p {
+  font-size: var(--textSize-4);
+}
+
+.features-intro-right {
+  flex: 0.7;
+  background-color: var(--background-dark);
+}
+
+/* ****** End of Main Section ******** */
+
+/* ****** Footer Section ******** */
+
+/* ****** End of Footer Section ******** */
