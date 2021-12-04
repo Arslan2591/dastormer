@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 html {
@@ -70,7 +71,7 @@ html {
 }
 
 .logo > img {
-  width: 4rem;
+  width: 6rem;
   filter: brightness(1.5);
 }
 
@@ -190,11 +191,27 @@ html {
 
 .features-intro-right {
   flex: 0.7;
+  display: flex;
   background-color: var(--background-dark);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 6.8rem 13.6rem 6.8rem 6.8rem;
+}
+
+.card {
+  border: 1px solid white;
+  max-width: 45%;
 }
 
 /* ****** End of Main Section ******** */
 
 /* ****** Footer Section ******** */
+.footer {
+  display: flex;
+}
+
+.footer > .logo-section > img {
+  width: 6rem;
+}
 
 /* ****** End of Footer Section ******** */
